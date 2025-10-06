@@ -1,0 +1,31 @@
+# API Keys and secrets
+api.env
+*.env
+
+# Cache and state files
+content_cache/
+state.json
+outputs/
+debug_images/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
