@@ -7,7 +7,8 @@ from datetime import datetime
 # path to notes folder
 
 # add notes file here
-FOLDER_PATH = Path.home() / ""
+FOLDER_PATH = Path.home() / "Library/CloudStorage/GoogleDrive-logan@theraymonds.ca/My Drive/TEST"
+
 STATE_FILE = Path(__file__).parent / "state.json"
 CACHE_DIR = Path(__file__).parent / "content_cache"
 

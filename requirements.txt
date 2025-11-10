@@ -2,5 +2,7 @@ openai>=1.0.0
 python-dotenv
 pdf2image
 Pillow
+fastapi
+uvicorn[standard]
 
 

@@ -69,7 +69,6 @@ def read_pdf_with_gpt(pdf_path):
 
 1. Every problem/question exactly as written, preserving all mathematical notation
 2. The TYPE of each problem (proof, computation, true/false, etc.)
-3. Key concepts and theorems referenced
 4. The difficulty level demonstrated by each problem
 
 Format each problem clearly. Include the full problem statement but do NOT include solutions or answers - I want to practice solving them myself."""
@@ -208,7 +207,13 @@ CRITICAL RULES:
 
 3. If the user mentions specific sections/chapters (e.g., "sections 2.3-2.8"), focus ONLY on the content from those sections in the notes. The notes may contain multiple chapters/sections, so extract and use only the relevant parts.
 
-4. For mathematical notation, use LaTeX format:
+4. **PAY CLOSE ATTENTION TO QUANTITY**: If the user asks for:
+   - "a problem" or "an example" or "one problem" → Generate EXACTLY ONE problem
+   - "some problems" or "a few" → Generate 2-3 problems
+   - "a quiz" → Generate a quiz based on the practice quiz and its format / topics
+   - Respect the exact number if they specify (e.g., "3 problems" = exactly 3)
+
+5. For mathematical notation, use LaTeX format:
    - Inline math: $equation$
    - Display math: $$equation$$
    - Examples: $x^2$, $\\frac{a}{b}$, $$\\int_0^1 x^2 dx$$
